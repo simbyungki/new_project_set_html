@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>fullpage demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="jquery.fullPage.css">
+
+<style>
+
+.sectSlide .swiper-slide {height:100%;}
+html,
+body,
+#wrap {height:100%;}
+.fixedBox {position:relative; float:left; width:40%; height:100%; background:#000;}
+.fixedBox .cont {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:80%;}
+.fixedBox .title {margin:0; padding:0; color:#fff; font-size:50px;}
+.fixedBox .summary {color:#999;}
+.fullContent {float:right; width:60%;}
+
+#footer {background:darkgoldenrod}
+#footer p {height:80px; line-height:80px; color:#fff; font-size:20px; text-align:center;} 
+
+@media screen and (max-width:1000px) {
+    .fixedBox {float:none; position:fixed; top:0; left:0; z-index:100; width:100%; height:auto; background:rgba(0,0,0,.8);}
+    .fixedBox .cont {position:static; margin:0 auto; padding:20px 0; width:90%; transform:translate(0); text-align:center;}
+    .fullContent {float:none; width:100%;}
+}
+
+@media screen and (max-width:640px) {
+    .fixedBox .title {font-size:30px;}
+    .fixedBox .summary {font-size:13px;}
+}
+
+</style>
+</head>
+<body>
+<header id="header">
+    <nav class="na"></nav>
+</header>
+<div id="wrap" class="clearFix">
+    <div class="fixedBox">
+        <div class="cont">
+            <p class="title">
+                #Fixed Box Area3
+            </p>
+            <p class="summary">
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            </p>
+        </div>
+    </div>
+    <div class="fullContent">
+        <div class="list">
+            <div class="section" style="background:url('http://hcc.hanwha.co.kr/static/ko/images/common/lifein_img2.jpg') no-repeat center; background-size:cover;">
+                <div class="sectSlide swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">11111</div>
+                        <div class="swiper-slide">22222</div>
+                        <div class="swiper-slide">33333</div>
+                    </div>
+                </div>
+                <div class="sliderNav">
+                    <a href="javascript:;" class="btn prev"></a>
+                    <a href="javascript:;" class="btn next"></a>
+                </div>
+            </div>
+            <div class="section" style="background:url('http://hcc.hanwha.co.kr/static/ko/images/common/lifein_img1.jpg') no-repeat center; background-size:cover;"></div>
+            <div class="section" style="background:url('http://hcc.hanwha.co.kr/static/ko/images/common/lifein_img3.jpg') no-repeat center; background-size:cover;"></div>
+            <footer id="footer" class="section fp-auto-height">
+                <p>copyright ⓒ All Rights reserved.</p>
+            </footer> 
+        </div>
+    </div>
+    <nav class="sideNav"></nav>
+</div>
+
+<script src="jquery-1.11.3.min.js"></script>
+<script src="jquery.fullPage.js"></script>
+<script>
+
+$(function(){
+    $('.fullContent').fullpage({
+        //options here
+        menu: '.sideNav',
+        verticalCentered: true,
+		autoScrolling: true,
+        scrollHorizontally: true,
+        anchors:['firstPage', 'secondPage', 'thirdPage'],
+        scrollingSpeed: 700,
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['First page', 'Second page', 'Third and last page'],
+
+        //events
+        //https://github.com/alvarotrigo/fullPage.js#methods
+        onLeave: function(origin, destination, direction){
+            if(origin.index == 1 && direction =='down'){
+                alert("Going to section 3!");
+            }else if(origin.index == 1 && direction == 'up'){
+                alert("Going to section 1!");
+            }
+        },
+        afterLoad: function(origin, destination, direction){},
+        afterRender: function(){},
+        afterResize: function(width, height){},
+        afterResponsive: function(isResponsive){},
+        afterSlideLoad: function(section, origin, destination, direction){},
+        onSlideLeave: function(section, origin, destination, direction){}
+    });
+    
+	//methods
+	//$.fn.fullpage.setAllowScrolling(false);
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+@font-face {
+	font-family: 'Spoqa Han Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../font/SpoqaHanSansRegular.eot);
+	src: url(../font/SpoqaHanSansRegular.eot?#iefix) format('embedded-opentype'),
+		 url(../font/SpoqaHanSansRegular.woff) format('woff'),
+		 url(../font/SpoqaHanSansRegular.otf) format('opentype');
+}
+@font-face {
+	font-family: 'Spoqa Han Sans';
+	font-style: normal;
+	font-weight: 100;
+	src: url(../font/SpoqaHanSansThin.eot);
+	src: url(../font/SpoqaHanSansThin.eot?#iefix) format('embedded-opentype'),
+		 url(../font/SpoqaHanSansThin.woff) format('woff'),
+		 url(../font/SpoqaHanSansThin.otf) format('opentype');
+}
+@font-face {
+	font-family: 'Spoqa Han Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: url(../font/SpoqaHanSansLight.eot);
+	src: url(../font/SpoqaHanSansLight.eot?#iefix) format('embedded-opentype'),
+		 url(../font/SpoqaHanSansLight.woff) format('woff'),
+		 url(../font/SpoqaHanSansLight.otf) format('opentype');
+}
+@font-face {
+	font-family: 'Spoqa Han Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url(../font/SpoqaHanSansBold.eot);
+	src: url(../font/SpoqaHanSansBold.eot?#iefix) format('embedded-opentype'),
+		 url(../font/SpoqaHanSansBold.woff) format('woff'),
+		 url(../font/SpoqaHanSansBold.otf) format('opentype');
+}

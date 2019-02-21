@@ -1,0 +1,40 @@
+{
+  "short_name": "TSC Signup",
+  "name": "TSC Signup",
+  "icons": [
+    {
+      "src": "48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "152.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "http://172.16.1.64:8088/join/html/introduce/pricePlan.html",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#fff"
+}
