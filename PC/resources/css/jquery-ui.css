@@ -508,11 +508,11 @@ button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra pad
 .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { position:absolute; top:9px; width: 43px; height: 43px; cursor:pointer;}
 .ui-datepicker .ui-datepicker-prev { left:10px; }
 .ui-datepicker .ui-datepicker-next { right:10px; }
-.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: block; width:43px; height:43px; }
-.ui-datepicker .ui-datepicker-prev span {background:url('../images/btn_calendar_prev.gif') no-repeat;}
-.ui-datepicker .ui-datepicker-next span {background:url('../images/btn_calendar_next.gif') no-repeat;}
-.ui-datepicker .ui-datepicker-prev.ui-state-disabled span {background:url('../images/btn_calendar_prev_off.gif') no-repeat;}
-.ui-datepicker .ui-datepicker-next.ui-state-disabled span {background:url('../images/btn_calendar_next_off.gif') no-repeat;}
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: block; width:43px; height:43px;}
+.ui-datepicker .ui-datepicker-prev span {background:url('../images/btn_calendar_prev.gif') no-repeat left center; background-size:25%;}
+.ui-datepicker .ui-datepicker-next span {background:url('../images/btn_calendar_next.gif') no-repeat right center; background-size:25%;}
+.ui-datepicker .ui-datepicker-prev.ui-state-disabled span {opacity:.2;}
+.ui-datepicker .ui-datepicker-next.ui-state-disabled span {opacity:.2;}
 
 .ui-datepicker .ui-datepicker-title { margin: 0 2.3em; line-height: 1.8em; font-size:20px; font-weight:normal; text-align:center; }
 .ui-datepicker .ui-datepicker-title .ui-datepicker-year {color:#f33245;}
